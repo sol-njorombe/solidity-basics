@@ -1,10 +1,10 @@
 # Object Oriented Programming for Contracts
 
 ## Access Modifiers (Visibility and Getters)
-1. external 
-    - Part of contract interface. 
+1. external
+    - Part of contract interface.
     - Can be called by other contracts and via transactions
-    - Cannot be called internally ( f() - fails, this.f() - works) 
+    - Cannot be called internally ( f() - fails, this.f() - works)
 2. public
     - Part of contract interface
     - Can be called internally or via a message
@@ -33,8 +33,8 @@
 - Change behavior of functions
 - used after visibility_modifier
 
-## Inheritance 
-**A is B type of relationship** defining multiple contracts that are related to each other through a parent/base  - child/derived relationship. 
+## Inheritance
+**A is B type of relationship** defining multiple contracts that are related to each other through a parent/base  - child/derived relationship.
 
 - promotes code reusability
 - all public and internal scoped functions are available to the derived class
@@ -43,7 +43,7 @@
 It supports multiple types of inheritance
 
 1. Single inheritance
-    - contract A 
+    - contract A
     - contract B is A
 
 2. Multi-level inheritance
@@ -51,7 +51,7 @@ It supports multiple types of inheritance
     - contract B is A
     - contract C is B
 
-3. Hierachical 
+3. Hierachical
     - contact A
     - contract B is A
     - contract C is A
@@ -62,16 +62,16 @@ It supports multiple types of inheritance
     - contract C is A
     - contract D is A, B, C
 
-Soilidity uses C3 Linearization/Method Resolution order(MRO). Follows a specific order while inheriting. 
+Soilidity uses C3 Linearization/Method Resolution order(MRO). Follows a specific order while inheriting.
 
 ## Abstract & Interfaces contracts
-- Contracts with partial function definitions. 
+- Contracts with partial function definitions.
 - You can only create instances of its children/derived class
 - Abstract functions - at least one of their function lacks implementation. Can be used as base class, bt not compiled
 - interfaces - Cannot have any function being implemented
 
 ## Contract Composition
-Combining multiple contracts or data types to create a complex data structure or contract. 
+Combining multiple contracts or data types to create a complex data structure or contract.
 
 
 # Reference
